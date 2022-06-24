@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=utf-8">
+  <title>
+    Portfolio
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="style.css">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /*Light House*/
+  body {
+    padding: 40px;
+    background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
+    color: #0e3481;
+    min-height: 100vh;
+  }
+
+  .header .lead {
+    max-width: 620px;
+  }
+
+  /** Below CSS is completely optional **/
+
+  .gallery-item {
+    width: 200px;
+    padding: 5px;
+  }
+</style>
+
+<body>
+  <!--Navigation Bar-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://geekprank.com/fake-virus/"><img width="80" height="55"
+            src="http://s3.amazonaws.com/gt7sp-prod/decal/28/85/47/4756378465275478528_1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact Us.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><a
+                href="https://geekprank.com/static-tv-noise/">Search</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Corousel-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Beauty Of The Night</h5>
+          <p>Places like Poles are the wonder of the Night</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Beauty of the sky</h5>
+          <p>Birds like Eagle are the thunder in sky</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Beauty Of The Seashore </h5>
+          <p>Sunset on the sea shore is the beauty of the nature.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+              <br><br><img src="https://images.hdqwalls.com/wallpapers/nature-background.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Facilis consequatur eligendi</strong></h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+              eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+              sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+            </p>
+            <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
+              nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
+              alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+      <br>
+      <section class="text-center">
+        <h3 class="mb-5">Some Epic Photos Of Nature</h3>
+      </section>
+      <br>
+      <!-- Gallery -->
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+            class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+          <img src="images/Cathlina.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="images/pexels-pixabay-414102.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+            class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+        </div>
+      </div>
+      <!-- Gallery -->
+      <hr class="my-5" />
+      <!--Card Section-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Read More...</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Antelope Canyon</h5>
+                <p class="card-text">
+                  Navajo Upper Antelope Canyon is a slot canyon in the American Southwest, on Navajo land east of
+                  Lechee, Arizona.
+                </p>
+                <a href="https://www.antelopecanyon.com/" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="images/pexels-pixabay-414102.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lake Wānaka</h5>
+                <p class="card-text">
+                  Lake Wānaka is New Zealand's fourth-largest lake and the seat of the town of Wānaka in the Otago
+                  region...
+                </p>
+                <a href="https://www.lakewanaka.co.nz/" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+
+                <img src="images/3.jpg" alt="Gold Coast" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gold Coast</h5>
+                <p class="card-text">
+                  The Gold Coast is a metropolitan region south of Brisbane on Australia's east coast. It's famed for
+                  its long sandy beaches....
+                </p>
+                <a href="https://www.youtube.com/watch?v=68B7JQQXATQ" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+  <hr class="my-5" />
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-dark" href="https://twitter.com/Krishna_Pal2">Aryan_357</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
